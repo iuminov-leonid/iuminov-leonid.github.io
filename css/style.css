@@ -803,6 +803,7 @@ section {
   width: 370px;
   height: 337px;
   background-color: #fbfaf8;
+  position: relative;
 }
 
 .our-p2 {
@@ -812,14 +813,35 @@ section {
 
 .claritas:hover img {
   filter: brightness(30%);
+  z-index: 0;
 }
 
 .claritas:hover {
   background-color: #362f2d;
 }
 
-.claritas:hover:before {
-  border-bottom: 20px solid #362f2d;
+.claritas-ps:hover:before {
+  content: '';
+  width: 26px;
+  height: 25px;
+  top: 107px;
+  left: 143px;
+  position: absolute;
+  background-image: url(../img/link-our.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.claritas-ps:hover:after {
+  content: '';
+  width: 26px;
+  height: 25px;
+  top: 107px;
+  left: 190px;
+  position: absolute;
+  background-image: url(../img/lupa-our.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .claritas:hover .our-span {
@@ -830,21 +852,23 @@ section {
   color: #c7b299;
 }
 
-.span-our {
-  position: relative;
-}
-
-.span-our:before {
+.claritas:before {
   content: "";
   border: 20px solid transparent;
   border-bottom: 20px solid #fbfaf8;
   position: absolute;
-  top: -32%;
+  top: 202px;
   left: 12px;
 }
 
-.span-our:hover:before {
-  display: none;
+.claritas:hover:before {
+  content: "";
+  border: 20px solid transparent;
+  border-bottom: 20px solid #362f2d;
+  position: absolute;
+  top: 202px;
+  left: 12px;
+  z-index: 1;
 }
 
 .quam {
@@ -853,6 +877,7 @@ section {
   width: 370px;
   height: 337px;
   background-color: #fbfaf8;
+  position: relative;
 }
 
 .quam:hover img {
@@ -875,12 +900,56 @@ section {
   color: #c7b299;
 }
 
+.quam:before {
+  content: "";
+  border: 20px solid transparent;
+  border-bottom: 20px solid #fbfaf8;
+  position: absolute;
+  top: 202px;
+  left: 12px;
+}
+
+.quam:hover:before {
+  content: "";
+  border: 20px solid transparent;
+  border-bottom: 20px solid #362f2d;
+  position: absolute;
+  top: 202px;
+  left: 12px;
+  z-index: 1;
+}
+
+.quam-ps:hover:before {
+  content: '';
+  width: 26px;
+  height: 25px;
+  top: 107px;
+  left: 143px;
+  position: absolute;
+  background-image: url(../img/link-our.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.quam-ps:hover:after {
+  content: '';
+  width: 26px;
+  height: 25px;
+  top: 107px;
+  left: 190px;
+  position: absolute;
+  background-image: url(../img/lupa-our.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
 .usus {
   float: left;
   margin-left: 30px;
   width: 370px;
   height: 337px;
   background-color: #fbfaf8;
+  position: relative;
 }
 
 .usus:hover img {
@@ -901,6 +970,49 @@ section {
 
 .usus:hover .our-p2 {
   color: #c7b299;
+}
+
+.usus:before {
+  content: "";
+  border: 20px solid transparent;
+  border-bottom: 20px solid #fbfaf8;
+  position: absolute;
+  top: 202px;
+  left: 12px;
+}
+
+.usus:hover:before {
+  content: "";
+  border: 20px solid transparent;
+  border-bottom: 20px solid #362f2d;
+  position: absolute;
+  top: 202px;
+  left: 12px;
+  z-index: 1;
+}
+
+.usus-ps:hover:before {
+  content: '';
+  width: 26px;
+  height: 25px;
+  top: 107px;
+  left: 143px;
+  position: absolute;
+  background-image: url(../img/link-our.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.usus-ps:hover:after {
+  content: '';
+  width: 26px;
+  height: 25px;
+  top: 107px;
+  left: 190px;
+  position: absolute;
+  background-image: url(../img/lupa-our.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .our-div2 {
@@ -942,6 +1054,7 @@ section {
   width: 370px;
   height: 337px;
   background-color: #fbfaf8;
+  position: relative;
 }
 
 .claritas-two:hover img {
@@ -964,12 +1077,56 @@ section {
   color: #c7b299;
 }
 
+.claritas-two:before {
+  content: "";
+  border: 20px solid transparent;
+  border-bottom: 20px solid #fbfaf8;
+  position: absolute;
+  top: 202px;
+  left: 12px;
+}
+
+.claritas-two:hover:before {
+  content: "";
+  border: 20px solid transparent;
+  border-bottom: 20px solid #362f2d;
+  position: absolute;
+  top: 202px;
+  left: 12px;
+  z-index: 1;
+}
+
+.claritas-two-ps:hover:before {
+  content: '';
+  width: 26px;
+  height: 25px;
+  top: 107px;
+  left: 143px;
+  position: absolute;
+  background-image: url(../img/link-our.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.claritas-two-ps:hover:after {
+  content: '';
+  width: 26px;
+  height: 25px;
+  top: 107px;
+  left: 190px;
+  position: absolute;
+  background-image: url(../img/lupa-our.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
 .quam-two {
   float: left;
   margin-left: 30px;
   width: 370px;
   height: 337px;
   background-color: #fbfaf8;
+  position: relative;
 }
 
 .quam-two:hover img {
@@ -992,12 +1149,56 @@ section {
   color: #c7b299;
 }
 
+.quam-two:before {
+  content: "";
+  border: 20px solid transparent;
+  border-bottom: 20px solid #fbfaf8;
+  position: absolute;
+  top: 202px;
+  left: 12px;
+}
+
+.quam-two:hover:before {
+  content: "";
+  border: 20px solid transparent;
+  border-bottom: 20px solid #362f2d;
+  position: absolute;
+  top: 202px;
+  left: 12px;
+  z-index: 1;
+}
+
+.quam-two-ps:hover:before {
+  content: '';
+  width: 26px;
+  height: 25px;
+  top: 107px;
+  left: 143px;
+  position: absolute;
+  background-image: url(../img/link-our.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.quam-two-ps:hover:after {
+  content: '';
+  width: 26px;
+  height: 25px;
+  top: 107px;
+  left: 190px;
+  position: absolute;
+  background-image: url(../img/lupa-our.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
 .usus-two {
   float: left;
   margin-left: 30px;
   width: 370px;
   background-color: #fbfaf8;
   height: 337px;
+  position: relative;
 }
 
 .usus-two:hover img {
@@ -1018,6 +1219,49 @@ section {
 
 .usus-two:hover .our-p2 {
   color: #c7b299;
+}
+
+.usus-two:before {
+  content: "";
+  border: 20px solid transparent;
+  border-bottom: 20px solid #fbfaf8;
+  position: absolute;
+  top: 202px;
+  left: 12px;
+}
+
+.usus-two:hover:before {
+  content: "";
+  border: 20px solid transparent;
+  border-bottom: 20px solid #362f2d;
+  position: absolute;
+  top: 202px;
+  left: 12px;
+  z-index: 1;
+}
+
+.usus-two-ps:hover:before {
+  content: '';
+  width: 26px;
+  height: 25px;
+  top: 107px;
+  left: 143px;
+  position: absolute;
+  background-image: url(../img/link-our.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.usus-two-ps:hover:after {
+  content: '';
+  width: 26px;
+  height: 25px;
+  top: 107px;
+  left: 190px;
+  position: absolute;
+  background-image: url(../img/lupa-our.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .get-two {
