@@ -344,7 +344,7 @@ section {
   display: block;
   width: 11px;
   height: 11px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   background-color: #191A1F;
   border-radius: 50%;
   border: 2px solid #998675;
@@ -1378,7 +1378,7 @@ section {
 }
 
 .excellent {
-  width: 100%;
+  max-width: 100%;
   margin-top: -23px;
   background-color: #fbfaf8;
 }
@@ -1425,6 +1425,7 @@ section {
 
 .excellent-span ul {
   padding-top: 30px;
+  margin-left: 50px;
 }
 
 .excellent-span li {
@@ -1443,7 +1444,7 @@ section {
   background-image: url(../img/icon/01w.png);
   position: absolute;
   top: 199px;
-  left: 1px;
+  left: 51px;
 }
 
 .excellent-span li:after {
@@ -1454,7 +1455,7 @@ section {
   position: absolute;
   top: 230px;
   ;
-  left: 1px;
+  left: 51px;
 }
 
 .excel-ul li:before {
@@ -1465,7 +1466,7 @@ section {
   position: absolute;
   top: 199px;
   ;
-  left: 1px;
+  left: 51px;
 }
 
 .excellent-span li:after {
@@ -1476,7 +1477,7 @@ section {
   position: absolute;
   top: 230px;
   ;
-  left: 1px;
+  left: 51px;
 }
 
 .excellent-span ul:before {
@@ -1486,7 +1487,7 @@ section {
   background-image: url(../img/icon/01w.png);
   position: absolute;
   top: 261px;
-  left: 1px;
+  left: 51px;
 }
 
 .excellent-span ul:after {
@@ -1497,7 +1498,7 @@ section {
   position: absolute;
   top: 291px;
   ;
-  left: 1px;
+  left: 51px;
 }
 
 .satis {
@@ -2359,7 +2360,7 @@ article {
   padding-top: 16px;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 710px) {
   .container {
     width: 605px;
     margin: 0 auto;
@@ -2402,13 +2403,16 @@ article {
   .logo-a {
     margin-left: 0px;
   }
-  .menu:before {
+  .nav-menu {
+    position: relative;
+  }
+  .nav-menu:before {
     position: absolute;
     width: 64px;
     height: 9px;
     content: " ";
-    top: 49px;
-    left: 479px;
+    top: 4px;
+    left: 451px;
     background-color: #ffffff;
   }
   .menu:before {
@@ -2416,8 +2420,17 @@ article {
     width: 64px;
     height: 9px;
     content: " ";
-    top: 81px;
-    left: 479px;
+    top: 23px;
+    left: 451px;
+    background-color: #ffffff;
+  }
+  .menu:after {
+    position: absolute;
+    width: 64px;
+    height: 9px;
+    content: " ";
+    top: -15px;
+    left: 451px;
     background-color: #ffffff;
   }
   .as {
@@ -2460,6 +2473,46 @@ article {
     margin-top: -862px;
   }
   .our-section {
-    margin-top: -421px;
+    margin-top: -371px;
+  }
+  .uni {
+    display: none;
+  }
+  .get-two {
+    display: none;
+  }
+  video {
+    height: 705px;
+    margin-top: 550px;
+    /*    background-image: url(../img/background-video-mobile.png);*/
+    background-repeat: no-repeat;
+  }
+  .our-p {
+    text-align: center;
+    padding-left: 1px;
+    width: 605px;
+  }
+  .our-menu {
+    display: none;
+  }
+  .our-div1 {
+    display: none;
+  }
+  .our-div2 {
+    display: none;
+  }
+  .play {
+    top: 660px;
+    left: 38px;
+  }
+  .play-button {}
+  .time {
+    padding-top: 1px;
+  }
+  .main-article {
+    margin-top: -800px;
+  }
+  .excellent {
+    width: 605px;
   }
 }
