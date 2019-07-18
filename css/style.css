@@ -334,9 +334,20 @@ section {
   float: left;
   width: 11px;
   height: 11px;
-  border: 1px solid #998675;
+  border: 2px solid #998675;
   background-color: #959493;
   border-radius: 50%;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  display: block;
+  width: 11px;
+  height: 11px;
+  border: 1px solid transparent;
+  background-color: #191A1F;
+  border-radius: 50%;
+  border: 2px solid #998675;
   text-decoration: none;
 }
 
@@ -344,7 +355,7 @@ section {
   display: block;
   width: 11px;
   height: 11px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   background-color: #191A1F;
   border-radius: 50%;
   border: 2px solid #998675;
@@ -354,18 +365,8 @@ section {
   display: block;
   width: 11px;
   height: 11px;
-  border: 1px solid transparent;
-  background-color: #191A1F;
-  border-radius: 50%;
-  border: 2px solid #998675;
-}
-
-.pagination a:hover {
-  display: block;
-  width: 11px;
-  height: 11px;
-  border: 1px solid transparent;
-  background-color: #191A1F;
+  border: 2px solid transparent;
+  background-color: #959493;
   border-radius: 50%;
   border: 2px solid #998675;
 }
@@ -399,20 +400,6 @@ section {
   padding-bottom: 26px;
 }
 
-.web:hover {
-  fill: #998675;
-}
-
-.capit:hover {
-  color: #C7B299;
-}
-
-.main-article-web:hover:after {
-  background-color: #c7b299;
-  width: 70px;
-  height: 3px;
-}
-
 .main-article-web:after {
   display: block;
   content: "";
@@ -421,6 +408,20 @@ section {
   height: 3px;
   background-color: #f1eee9;
   align-self: flex-end;
+}
+
+.main-article-web:hover:after {
+  background-color: #c7b299;
+  width: 70px;
+  height: 3px;
+}
+
+.main-article-web:hover .web {
+  fill: #998675;
+}
+
+.main-article-web:hover .capit {
+  color: #C7B299;
 }
 
 .main-article-dev a {
@@ -459,6 +460,10 @@ section {
   align-self: flex-end;
 }
 
+.main-article-dev:hover .capit {
+  color: #C7B299;
+}
+
 .main-article-cus {
   width: 266px;
   float: left;
@@ -495,6 +500,10 @@ section {
   align-self: flex-end;
 }
 
+.main-article-cus:hover .capit {
+  color: #C7B299;
+}
+
 .main-article-mar {
   width: 266px;
   float: left;
@@ -529,6 +538,10 @@ section {
   height: 3px;
   background-color: #f1eee9;
   align-self: flex-end;
+}
+
+.main-article-mar:hover .capit {
+  color: #C7B299;
 }
 
 .capit {
@@ -2395,15 +2408,6 @@ article {
     height: 9px;
     content: " ";
     top: 49px;
-    left: 479px;
-    background-color: #ffffff;
-  }
-  .menu:after {
-    position: absolute;
-    width: 64px;
-    height: 9px;
-    content: " ";
-    top: 65px;
     left: 479px;
     background-color: #ffffff;
   }
